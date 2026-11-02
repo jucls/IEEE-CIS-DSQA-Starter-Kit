@@ -1,4 +1,4 @@
-# IEEE-CIS DSQA Starter Kit
+# IEEE CIS Domain-Specific Question Answering Challenge with LLMs - Starter Kit
 
 Example submissions for the [IEEE-CIS Technical Challenge on Domain-Specific
 Question Answering with LLMs](https://cis.taskforce.ieee.org/gpais/tc-domain-qa-llms).
