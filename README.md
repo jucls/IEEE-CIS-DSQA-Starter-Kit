@@ -17,8 +17,7 @@ the folder as a starting point for your own.
 - **[`02_rag/`](02_rag)** — retrieves the most relevant fragments from the
   whole corpus (blind search, same as you'd have to do: nothing tells this
   code which document a question came from) and adds them to the prompt
-  before asking the model. Tested end to end: ~36 minutes for the full
-  corpus plus 50 questions, well inside the 1-hour limit.
+  before asking the model.
 
 ## Building a submission
 
@@ -47,7 +46,7 @@ anything not on that list can't be used.
 ## Sample questions
 
 [`sample/sample_qa.json`](sample/sample_qa.json) has 25 example question/answer
-pairs across both domains (AI Papers, DONES) — illustrative of the style,
+pairs across both domains (AI Papers, IFMIF-DONES) — illustrative of the style,
 length, and reasoning expected, not part of either Leaderboard's actual
 question set. [`sample/sites.txt`](sample/sites.txt) lists the source domains
 the whole corpus (real documents and distractors alike) was drawn from.
