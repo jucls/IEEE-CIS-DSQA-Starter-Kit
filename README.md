@@ -43,6 +43,9 @@ package pre-installed in the evaluation environment, pinned to the exact
 version running there. There is no internet access at submission time, so
 anything not on that list can't be used.
 
+Your submission folder and the shared data are read-only. If your code needs
+to write files at run time, use `/tmp` (32 GB, wiped after every run).
+
 ## Sample questions
 
 [`sample/sample_qa.json`](sample/sample_qa.json) has 25 example question/answer
