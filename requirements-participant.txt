@@ -1,8 +1,8 @@
 # Exact versions pre-installed in the evaluation environment. Your main.py
 # can rely on any of these; nothing else can be added (the environment has
-# no internet access at submission time). vLLM and flash-attn are not
-# installed — inference goes through transformers/accelerate directly
-# (sdpa/eager attention).
+# no internet access at submission time). vLLM is not installed — inference
+# goes through transformers/accelerate directly. flash-attn is installed
+# (added 2026-11-23), so attn_implementation="flash_attention_2" is available.
 
 # ── Base ML framework ───────────────────────────────────────────────────────
 torch==2.8.0
@@ -11,6 +11,10 @@ torchaudio==2.8.0
 
 # ── Core inference ───────────────────────────────────────────────────────────
 triton==3.4.0
+# flash-attn has no prebuilt wheel on PyPI (only source). To reproduce the
+# environment locally without compiling, install the official prebuilt wheel:
+# pip install --no-deps https://github.com/Dao-AILab/flash-attention/releases/download/v2.8.3.post2/flash_attn-2.8.3.post2+cu12torch2.8cxx11abiTRUE-cp310-cp310-linux_x86_64.whl
+flash-attn==2.8.3.post2
 transformers==5.17.0
 accelerate==1.15.0
 bitsandbytes==0.50.2
